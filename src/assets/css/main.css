@@ -1,0 +1,127 @@
+.transaction-container {
+    width: 50%;
+    flex-wrap: nowrap;
+    margin: 20px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    background-color: #ECECEC;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .transaction-container div {
+      display: flex;
+  }
+
+  .transaction-container label {
+    margin: 10px auto;
+    font-weight: bold;
+  }
+  
+  .transaction-container input,
+  .transaction-container textarea,
+  .transaction-container select {
+    width: 70%;
+    box-sizing: border-box;
+    border: 1px solid #452F74;
+    outline: none;
+    font: inherit;
+    margin: auto 10px;
+    font-size: 15px;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btnTransaction {
+    border: 1px solid #452F74;
+    background-color: white;
+    color: #452F74;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 16px;
+    font: inherit;
+}
+
+.btnTransaction:hover,
+.btnTransaction:active {
+  color: white;
+  background-color: #452F74;
+}
+
+.btnTransaction:disabled{
+  background-color: lightgrey;
+  cursor: not-allowed;
+
+}
+
+.available-balance{
+  border-radius: 10px;
+  border: 1px solid #8575A7;
+  background-color: #ccc;
+  height: 30px;
+  width: 70%;
+  font: inherit;
+  margin: auto 10px;
+  font-size: 15px;
+  align-content: center;
+}
+
+.btn-cancel{
+  border: 1px solid #9F141B;
+  background-color: white;
+  color: #9F141B;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 20px;
+  font: inherit;
+}
+
+.btn-cancel:hover,
+.btn-cancel:active{
+  background-color: #e6323b;
+  color: white;
+}
+
+.transaction-table{
+  width: 100%;
+  border-color: 1px solid #8575A7;
+  background-color: white;
+  border-collapse: collapse;
+  font: inherit
+}
+
+.transaction-table th{
+  background-color: #B88EB8;
+  height: 30px;
+}
+
+.transaction-table tr:nth-child(odd){
+  background-color: #F0E6F0;
+}
+
+.reset-table{
+  border-collapse: collapse; 
+  justify-content: center;
+  display: inline;
+}
+
+.reset-add-container{
+  display: block !important;  
+}
+
+.reset-add-container div{
+  width: 80%;  
+  margin: 10px auto;
+  justify-content: center;
+}
